@@ -32,7 +32,7 @@ def adaptive_filter_rls(noise_reference: np.ndarray, mixed_signal: np.ndarray,
 
 
 def adaptive_filter_lms(noise_reference: np.ndarray, mixed_signal: np.ndarray,
-                        filter_lambda: float = 0.01, filter_length: int = 100) -> Tuple:
+                        filter_lambda: float = 0.005, filter_length: int = 200) -> Tuple:
     """
     Custom LMS Adaptive filter using the padasip library
     :param noise_reference: 1D noise reference signal
